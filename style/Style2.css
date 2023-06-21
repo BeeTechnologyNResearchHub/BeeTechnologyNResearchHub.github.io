@@ -57,6 +57,7 @@
     box-shadow: 0 2px 10px rgba(119, 0, 0, 0.2);
     background-color: #fff;
     padding-top: 200px;
+    padding-left: 150px;
     
     
   }
@@ -93,9 +94,21 @@
     line-height: 1.5;
     padding: 0 20px;
   }
-  .thirdsec{
+  .thirdsec .col-md-6:nth-child(1){
     padding-top: 200px;
     padding-bottom: 100px;
+  }
+  .thirdsec .col-md-6:nth-child(2){
+    background-image: url(/style/Newfolder/shape2.png);
+    background-size:cover;
+   background-position: center;
+    margin: 0px;
+    padding: 0px;
+  }
+  .thirdsec .textLeftSide{
+    padding-top: 400px;
+    padding-bottom: 200px;
+    color: #f9f5f3;
   }
   .stu{
     font-weight: normal;
@@ -114,6 +127,19 @@
   .fourthsec{
     padding: 200px 0px 200px;
     color: #ec2f84;
+  }
+  .fifthsec .textRightSide{
+    padding: 0px 50px;
+  }
+  .fifthsec .col-md-6:nth-child(2){
+    background-image: url(/style/Newfolder/Path5@2x.png);
+    background-position: center;
+    background-size: cover;
+    background-position: relative;
+    margin: 0px;
+  }
+  .fifthsec .textRightSide{
+    margin-top: 200px;
   }
    .sixthsec{
     padding-top: 200px;
@@ -247,7 +273,7 @@
 /* CSS FOR STEPS Ends here */
 .cads{
   padding: 17px 17px;
-  box-shadow: 0 2px 5px rgb(42, 41, 41);
+  box-shadow: 0 2px 3px rgb(103, 101, 101);
   border-radius: 2px;
   background-color: #fdd3cc
 }
@@ -283,7 +309,7 @@
 }
 .sixsec .box{
   padding: 14px;
-  box-shadow: 2px 5px 5px 0px;
+  box-shadow: 2px 3px 3px 0px;
   height: 400px;
   overflow: hidden;
 }
@@ -343,10 +369,10 @@
   background-image: url("/style/school/Component\ 1\ –\ 1@2x.png");
   background-size: cover;
   color: white;
-  padding: 70px 0px;
+  padding: 40px 0px 70px 0px;
 }
 .herosect .row{
-  padding: 65px 0px;
+  padding: 20px 0px 65px 0px;
 }
 .herosect .text{
   text-align: center;
