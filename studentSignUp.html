@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Website</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/style/style.css">
+  <link rel="stylesheet" href="/style/Style.css">
+  <link rel="stylesheet" href="/style/Navbar And Footer.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-</head> 
+  
+</head>
 <body>
   <header>
+    <!--Nav bar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light ">
       <a class="navbar-brand" href="/index.html">Logo</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,32 +55,34 @@
       </div>
     </nav>
   </header>
+
+  <!--1st sec-->
   <section class="loginsec">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-6  wow animate__animated animate__backInDown" data-wow-duration="1.5s" data-wow-delay=".5s">
+        <div class="col-md-6 col-12 wow animate__animated animate__backInDown" data-wow-duration="1.5s" data-wow-delay=".5s">
           <img src="/style/Newfolder/undraw_true_friends_c-1.png" alt="Image" class="login-image" style="margin-right: 200px">
         </div>
         <div class="col-md-4">
           <div class="containerLogin">
-            <h2 class="w">Sign Up With</h2><br><br>
+            <h2 class="w" style="color:#FE1970;">Sign Up With</h2><br><br>
             <form>
-              <div class="row" style="margin-left:30px;">
+              <div class="row" style="margin-left:20px;">
                 <div class="col-lg-6 col-md-6">
-                  <button class="btnL btnL-facebook" style="padding: 10px;padding-left: 15px;">
+                  <button class="btnL btnL-facebook" style="padding: 10px;padding-left: 15px;padding-right: 20px;">
                     <img src="/style/Newfolder/cdea3d5e@2x.png" alt="Facebook Logo" class="btnL-logoG" style="margin-right: 15px;">
                     <span class="btn-text">Facebook</span>
                   </button>
                 </div>
                 <div class="col-lg-6 col-md-6">
-                  <button class="btnL btnL-google" style="padding-top: 4px;padding-bottom: 4px;padding-right: 19px;">
-                    <img src="/style/Newfolder/Google@2x.png" alt="Facebook Logo" class="btnL-logo">
+                  <button class="btnL btnL-google" style="padding-top: 3px;padding-bottom: 3px;padding-right: 25px;">
+                    <img src="/style/Newfolder/Google@2x.png" alt="Google Logo" class="btnL-logo">
                     <span class="btn-text">Google</span>
                   </button>
                 </div>
-              </div>              
+              </div>
               <br><br>
-              <p class="w"><a href="" style="color: #FE1970;">Or Sign Up with your email</a> </p>
+              <p class="w"><a href="" style="color: #FE1970;">Or Sign in with your email</a></p>
               <div class="form-group">
                 <input type="text" id="email" name="email" placeholder="Email" required>
               </div>
@@ -85,22 +93,20 @@
                 <input type="password" id="password" name="password" placeholder="Confirm Password" required>
               </div>
               <div class="form-group btn-container">
-                <input type="submit" class="btn1" value="Create Account">
+                <input type="submit" class="btn1" value="Sign Up">
               </div>
-              <p class="w" style="text-align: left;"><a href="" style="color: #FE1970;"> Already have an account? Login</a></p>
+              <p class="w" style="text-align: left;"><a href="/Login.html" style="color: #FE1970;"> Already have an account? Login</a></p>
               <p class="w" style="text-align:left;"><a href="" style="color: #FE1970;">By joining ApplyBoard, you agree to ApplyBird's student Terms & Conditions, Privacy Policy and Terms of Use.</a></p>
             </form>
           </div>
-          </div>
+        </div>
       </div>
     </div>
   </section>
-
-
-
   
-  <!-- footer -->
-  <footer>
+
+   <!-- footer -->
+   <footer>
     <div class="container">
       <div class="col">
         <div class="row"><a href="/" style="color:#F75246;"><b>Service</b></a></div>
@@ -142,7 +148,7 @@
         <div class="row"><a href="/TermsAndCondition.html" style="color:#F75246;">Terms and Conditions</a></div>
         <div class="row"><a href="/ApplyBoardTerms.html" style="color:#F75246;">Terms of Use</a></div>
         <div class="row"><a href="/CookiePolicy.html" style="color:#F75246;">Cookie Policy</a></div>
-        <div class="row"><a href="/applyboardfees.html" style="color:#F75246;">Applyboard Fees</a></div>
+        <div class="row"><a href="/applyboardfees.html" style="color:#F75246;">ApplyBoard Fees</a></div>
       </div>
       <div class="col-md-3">
         <div class="row"><b>Get Social</b></div>
@@ -164,6 +170,7 @@
   <!-- footer -->
 </body>
 </html>
+
 <script>
   // Initialize Wow.js
   new WOW().init();

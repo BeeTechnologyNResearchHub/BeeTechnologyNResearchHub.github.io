@@ -14,23 +14,49 @@
 .navbar .nav-item .nav-link {
   color: red; /* Replace 'red' with the color of your choice */
 }
-  .col-md-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-    text-align: center;
-    margin: auto;
-  }
+.col-md-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  text-align: center;
+  margin: auto;
+}
 
-  img {
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.firstsec {
+  padding-bottom: 200px;
+  color: rgb(63, 61, 61);
+  font-weight: 700;
+}
+
+/* for changing herosections sub p short */
+.herosec {
+  font-weight: 200;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Media Queries for responsive styling */
+@media (max-width: 767px) {
+  .col-md-6 {
+    flex: 0 0 100%;
     max-width: 100%;
-    height: auto;
   }
 
   .firstsec {
-    padding-bottom: 200px;
-    color: rgb(63, 61, 61);
-    font-weight: 700;
+    padding-bottom: 100px;
   }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
 
   /* for changing herosections sub p short */
   .herosec {
@@ -95,7 +121,7 @@
     margin-top: 15px;
     font-size: 20px;
     color: orangered;
-    font-weight: 300;
+    font-weight: 700;
   }
 
   .card p {
@@ -133,9 +159,9 @@
   }
 
   .thirdsec .textLeftSide {
-    padding-top: 200px;
+    padding-top: 320px;
     padding-bottom: 100px;
-    color: #f9f5f3;
+    color: #ef3976;
   }
 
   .stu {
@@ -150,6 +176,13 @@
       max-width: 100%;
       text-align: center;
       padding: 20px;
+    }
+    .thirdsec .col-md-6:nth-child(2) {
+      background-image: url(/style/Newfolder/shape2.png);
+      background-size: contain;
+      background-position: center;
+      margin: 0;
+      padding: 0;
     }
 
     .thirdsec .col-md-6:nth-child(1) {
@@ -281,15 +314,23 @@
       max-width: 15%;
     }
   }
-   .eightsec{
-    padding: 200px;
-    color: #ec2f84;
-   }
-   .eightsec .text-center{
-    color: #f32ca0;
-    font-weight: 600;
-   }
-   
+   .eightsec {
+  padding: 100px 20px; /* Adjust the padding as needed */
+  color: #ec2f84;
+}
+
+.eightsec .text-center {
+  color: #f32ca0;
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  /* Styles for mobile devices */
+  .eightsec {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
 /* ---------------css for home page ---------------*/
 
 /*---------------- CSS FOR STUDENT PAGE------------- */
@@ -298,6 +339,10 @@
   background-image: url(/style/student-pg/Path\ 12@2x.png);
   background-size: cover;
   color: whitesmoke;
+}
+.frstsec p{
+  padding: 0px 150px;
+  text-align: justify;
 }
 .frstsec button{
   padding: 20px 40px 20px 40px;
@@ -314,12 +359,22 @@
     width: calc(50% - 10px); /* Adjust the width and spacing for smaller screens */
     margin-right: 10px;
   }
+  .frstsec p{
+    padding: 0px 0px;
+    text-align: justify;
+    width: fit-content;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .card-body {
     width: 100%; /* Adjust the width for the smallest screens */
     margin-right: 0;
+  }
+  .frstsec p{
+    padding: 0px 0px;
+    text-align: justify;
+    width: fit-content;
   }
 }
 
@@ -352,48 +407,88 @@
  
 /* card body css */
 /* CSS FOR STEPS */
-.step1{
-  margin: 100px;
-}
-.step1 .col-md-6{
-  text-align: left;
- }
- .step2{
-  margin: 100px;
- }
- .step2 .col-md-6{
-  text-align: right;
- }
- .step3{
-  margin: 100px;
- }
- .step3 .col-md-6{
-  text-align: left;
- }
- .step4{
-  margin: 100px;
- }
- .step4 .col-md-6{
-  text-align: right;
- }
- .step5{
-  margin: 100px;
- }
- .step5 .col-md-6{
-  text-align: left;
- }
- .steps{
+.steps {
   background-color: #fad3cc;
   padding-top: 50px;
   padding-bottom: 50px;
   font-size: 20px;
- }
- .steps h2{
+}
+
+.steps h2 {
   font-size: 45px;
- }
- .head{
+}
+
+.head {
   color: #f32ca0;
- }
+}
+
+.step1,
+.step2,
+.step3,
+.step4,
+.step5 {
+  margin: 100px;
+}
+
+.step1 .col-md-6,
+.step2 .col-md-6,
+.step3 .col-md-6,
+.step4 .col-md-6,
+.step5 .col-md-6 {
+  text-align: left;
+}
+
+.step1 .col-sm-12,
+.step2 .col-sm-12,
+.step3 .col-sm-12,
+.step4 .col-sm-12,
+.step5 .col-sm-12 {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .step1,
+  .step2,
+  .step3,
+  .step4,
+  .step5 {
+    margin: 50px;
+  }
+
+  .step1 .col-md-6,
+  .step2 .col-md-6,
+  .step3 .col-md-6,
+  .step4 .col-md-6,
+  .step5 .col-md-6 {
+    text-align: center;
+  }
+
+  .step1 .col-sm-12,
+  .step2 .col-sm-12,
+  .step3 .col-sm-12,
+  .step4 .col-sm-12,
+  .step5 .col-sm-12 {
+    text-align: center;
+  }
+
+  .steps h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 576px) {
+  .steps h2 {
+    font-size: 25px;
+  }
+
+  .step1,
+  .step2,
+  .step3,
+  .step4,
+  .step5 {
+    margin: 25px;
+  }
+}
 /* CSS FOR STEPS Ends here */
 .cads{
   padding: 17px 17px;
@@ -455,6 +550,8 @@
   align-items: center;
   justify-content: space-around;
   margin: 70px;
+  flex-direction: row;
+  padding: 10px 0px;
 }
 .cardbody .col{
   padding: 0px;
@@ -465,6 +562,7 @@
   border-radius: 0px;
   text-align: left;
   box-shadow: 0px 5px 5px;
+  height: 500px;
 }
 .cardbody .card h2{
   font-size: 1rem;
@@ -811,25 +909,64 @@ body {
 /* 
 =========================================================================================== */
  /* -------------footer starts here--------------------- */
- footer  {
+ footer {
   padding: 20px 0;
   width: 100%;
   color: rgb(223, 83, 32);
   background-color: #fabbb0;
   font-weight: 600;
+  overflow: hidden;
 }
-footer .container{
-display: flex;
-}
-.footer{
-padding-top: 50px;
+
+.footer {
+  padding-top: 50px;
   border: #fff;
 }
-.fot{
-height: 250px !important;
-width:100% !important;
+
+.fot {
+  height: auto;
+  width: 100%;
+  max-width: 250px;
+  display: block;
+  margin: 0 auto;
 }
-footer {
-height: auto;
-overflow: hidden;
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 576px) {
+  .col {
+    width: 50%;
+    margin-bottom: 0; /* Remove bottom margin on small devices */
+  }
+}
+
+@media (min-width: 992px) {
+  .col {
+    width: 25%;
+  }
+}
+
+@media (max-width: 576px) {
+  footer .container{
+    display: flex;
+    flex-direction: row;
+  }
+  footer .container .row{
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .col {
+    width: 100%;
+    margin-bottom: 20px; /* Reduce bottom margin on mobile devices */
+  }
 }

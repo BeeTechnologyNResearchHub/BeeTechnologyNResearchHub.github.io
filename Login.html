@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Website</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/style/style.css">
+  <link rel="stylesheet" href="/style/Style.css">
+  <link rel="stylesheet" href="/style/Navbar And Footer.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-</head> 
+  
+</head>
 <body>
   <header>
+    <!--Nav bar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light ">
       <a class="navbar-brand" href="/index.html">Logo</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,17 +54,18 @@
         </ul>
       </div>
     </nav>
-    
   </header>
+
+
   <section class="loginsec">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-6  wow animate__animated animate__backInDown" data-wow-duration="1.5s" data-wow-delay=".5s">
+        <div class="col-md-6 col-12 wow animate__animated animate__backInDown" data-wow-duration="1.5s" data-wow-delay=".5s">
           <img src="/style/Newfolder/undraw_true_friends_c-1.png" alt="Image" class="login-image" style="margin-right: 200px">
         </div>
         <div class="col-md-4">
           <div class="containerLogin">
-            <h2 class="w" style="color:#FE1970;" >Login</h2><br><br>
+            <h2 class="w" style="color:#FE1970;">Login</h2><br><br>
             <form>
               <div class="row" style="margin-left:20px;">
                 <div class="col-lg-6 col-md-6">
@@ -69,13 +76,13 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                   <button class="btnL btnL-google" style="padding-top: 3px;padding-bottom: 3px;padding-right: 25px;">
-                    <img src="/style/Newfolder/Google@2x.png" alt="Facebook Logo" class="btnL-logo">
+                    <img src="/style/Newfolder/Google@2x.png" alt="Google Logo" class="btnL-logo">
                     <span class="btn-text">Google</span>
                   </button>
                 </div>
-              </div>              
+              </div>
               <br><br>
-              <p class="w"><a href="" style="color: #FE1970;">Or log in with your email and password</a> </p>
+              <p class="w"><a href="" style="color: #FE1970;">Or log in with your email and password</a></p>
               <div class="form-group">
                 <input type="text" id="email" name="email" placeholder="name@example.com" required>
               </div>
@@ -83,23 +90,17 @@
                 <input type="password" id="password" name="password" placeholder="*********" required>
               </div>
               <div class="form-group remember-me">
-                  <input type="checkbox" id="remember" name="remember">
-                  <label for="remember">Remember me</label>
-                </div>
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Remember me</label>
+              </div>
               <div class="form-group btn-container">
                 <input type="submit" class="btn1" value="Login">
               </div>
+              <p class="w" style="text-align: left;"><a href="#second-section" style="color: #FE1970;"> Don't have an account? SignUp</a></p>
+              <p class="w" style="text-align:left;"><a href="" style="color: #FE1970;">Forgot password?</a></p>
             </form>
           </div>
-          <div style="display: flex;">
-            <div class="col-md-6">
-              <a href="" style="color: #FE7769;">Forgot password?</a>
-            </div>
-            <div class="col-md-6" style="color: #FE7769;margin-right: 10px;">
-              <a href="#second-section" style="color: #FE7769;">Don't have an account?SignUp</a>
-            </div>
-          </div>
-          
+        </div>
       </div>
     </div>
   </section>

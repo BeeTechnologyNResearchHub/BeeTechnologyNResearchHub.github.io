@@ -662,52 +662,95 @@ margin-top: 40px;
 .image-link {
   margin-right: 30px;
 }
-.nav2 a {
-  margin-right: 10px; /* Adjust the value as per your preference */
-  color:#FFFFFF;
-  font-size: large;
-}
-.nav2 a:visited {
-  color:#FE7769 /* Change the color to your preference */
-}
-.radio-label {
-  margin-right: 10px; /* Adjust the margin value as needed */
-}
 
-.dropdown-item{
-  color: #FE676A
 
-}
-.navbar-brand{
-  margin-left: 120px;
-  color: #FE7679;
-}
-.nav-link{
-  color: #FE7679;
-  font-size: large;
-}
-
-/* ========================================== */
- /* -----------footer starts here----------------- */
-  footer  {
-    padding: 20px 0;
-    width: 100%;
-    color: rgb(223, 83, 32);
-    background-color: #fabbb0;
-    font-weight: 600;
+@media (max-width: 767px) and (max-device-width: 480px) and (orientation: portrait) {
+  .containerLogin {
+    padding: 10px;
   }
-footer .container{
-  display: flex;
+  
+  .containerLogin form {
+    font-size: 14px;
+  }
+  
+  .containerLogin .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .containerLogin input[type="text"],
+  .containerLogin input[type="password"],
+  .containerLogin input[type="submit"] {
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  .containerLogin .remember-me {
+    font-size: 12px;
+  }
+  
+  .containerLogin .btn1 {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
 }
-.footer{
-  padding-top: 50px;
-    border: #fff;
+@media (max-width: 767px) {
+  .containerLogin {
+    padding: 30px;
+    margin-right: 0px;
+    margin-left: 20px;
+  }
+  
+  .containerLogin form {
+    font-size: 14px;
+  }
+  
+  .containerLogin .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .containerLogin input[type="text"],
+  .containerLogin input[type="password"],
+  .containerLogin input[type="submit"] {
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  .containerLogin .remember-me {
+    font-size: 12px;
+  }
+  
+  .containerLogin .btn1 {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  .login-image{
+
+    margin-left: -50px;
+  }
+  .right-div{
+    margin-left: 15px;
+  }
+  .container-fluid {
+    overflow-x: hidden;
+  }
+  .btnL-facebook{
+    margin-left: -41px;
+  }
+  .btnL-google{
+    margin-left: -6px;
+    padding-left: 15px;
+  }
+  
 }
- .fot{
-  height: 250px !important;
-  width:100% !important;
- }
- footer {
-  height: auto;
-  overflow: hidden;
+@media (max-width: 1000px) 
+{
+   .col-md-4{
+    flex: 1 0 33.333333%;
+    max-width: 94.333333%;
+   }
+   .login-image{
+   width: 385px;
+   }
 }
+
+
