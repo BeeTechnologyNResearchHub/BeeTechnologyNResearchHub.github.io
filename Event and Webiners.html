@@ -2,12 +2,19 @@
 <html>
 <head>
   <title>My Website</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/style/style.css">
+  <link rel="stylesheet" href="/style/OurStory.css">
+  <link rel="stylesheet" href="/style/Navbar And Footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   
-</head> 
+</head>
 <body>
   <header>
+    <!--Nav bar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light ">
       <a class="navbar-brand" href="/index.html">Logo</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,38 +58,83 @@
   <!--First Sec-->
   <section class="Rsec" style="padding-top: 200px;">
   </section>
-  <!--2nd Sec-->
-  <section class="" style="padding-top: 30px;padding-bottom: 50px;">
-    <div class="col-md-6">
-        <div class="col-md-6">
-            <h3 style="color: #FE4386;">WHERE WE'LL BE</h3>
-            <h2 style="color: #FE4386;">Upcoming Events</h2>
-        </div>
-        <div style="font-size: small;">
-            Due to COVID-19,the majority of industry events have been placed on hold or rescheduled<br>
-            for a future date, Check back soon for an update on where you can meet ApplyBoard.
-        </div>
-        <div style="padding-top: 30px;padding-bottom: 30px;">
-            <img src="/style/Events/CBIE2020@2x.png" alt="Image description" style="max-width: 100%;height: auto;width: 50%;">
-        </div>
-        <div style="padding-bottom: 30px;">
-            <div class="sit-on-button" style="padding-left: 150px;padding-right: 150px;">
-                <span style="color: #FE4386;font-size: larger;">November 16-20,2020</span>
-            </div>
-        </div>
-        <div>
-            <P style="font-size:xx-large;color:#FE4386 ;">CBIE 2020</P>
-            Online<br><br>
-            ApplyBoard is very excited to be the premier sponsor of<br>
-            CBIE 2020 and their busary program.
 
+<!--2nd sec--->
+  <section style="padding-top: 30px; padding-bottom: 50px; display: flex; justify-content: center; align-items: center;">
+    <div class="col-md-6">
+      <div style="text-align: center;">
+        <h3 style="color: #FE4386;">WHERE WE'LL BE</h3>
+        <h2 style="color: #FE4386;">Upcoming Events</h2>
+      </div>
+      <div style="font-size: small;">
+        Due to COVID-19, the majority of industry events have been placed on hold or rescheduled<br>
+        for a future date. Check back soon for an update on where you can meet ApplyBoard.
+      </div>
+      <div  class="img">
+        <img src="/style/Events/CBIE2020@2x.png" class="imgE">
+      </div>
+      <div style="padding-bottom: 30px; text-align:center">
+        <div class="sit-on-button" style="padding-left: 40px;padding-right: 40px;">
+          <span style="color: #FE4386; font-size: larger;">November 16-20, 2020</span>
         </div>
+      </div>
+      <div style="text-align: center;">
+        <p style="font-size: xx-large; color: #FE4386;">CBIE 2020</p>
+        <p>Online<br><br>
+          ApplyBoard is very excited to be the premier sponsor of<br>
+          CBIE 2020 and their bursary program.</p>
+      </div>
     </div>
   </section>
+  
+  <style>
+     .sit-on-button {
+      
+      background-color: #ffffff; /* White background */
+  color: #000000; /* Black text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px 2px; /* Add padding for better visual */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  transition: box-shadow 0.3s ease; /* Add a smooth transition on hover */ 
+  /* Additional styles to make it sit on the website */
+  display: inline-block;
+  vertical-align: middle;
+}
+    /* CSS for mobile */
+    @media (max-width: 767px) {
+      .col-md-6 {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .imgE{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        max-width: 100%;
+    
+      }
+    }
+  
+    /* CSS for desktop */
+    @media (min-width: 768px) {
+      .col-md-6 {
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      .imgE{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        max-width: 100%;
+      }
+    
+    }
+  </style>
+  
+  
 
   <!--Third sec-->
   <section class="Storysec" style="padding-top: 30px; padding-bottom: 30px;">
-    <div class="col-md-6">
+    <div style="text-align: center;">
         <div>
             <h3 style="color: #FE4386;">Upcoming Webinars</h3>
         </div>
@@ -90,7 +142,7 @@
             <span style="color: black;">We invite you to register for one of our webinars below.</span>
         </div>
         <div class="cardH-container">
-            <div class="cardH cardH1" style="background-color: #ffffff;height:auto;">
+            <div class="cardH cardH1" style="background-color: #ffffff;height:auto;width: 700px;">
              <div style="padding: 30px;">
                 <img src="/style/Events/BC_Interior_Webinar@2x.png" alt="Image description" style="max-width: 100%;height: auto;">
              </div>
@@ -103,7 +155,7 @@
                 <h5 style="color: #FE4386;">Audience: Recruitment Partners & Students</h5>
              </div>
              <div style="color: black;text-align: justify;padding: 0px 70px;"> 
-                CCanada is the world’s second-largest
+                Canada is the world’s second-largest
                  country by landmass, covering 9.98 million
                  km². With 10 provinces, 3 territories, and 
                  multiple climates, Canada is a diverse and 
@@ -144,8 +196,7 @@
         </div>
     </div>
   </section>
-  
-  
+    
   <!-- footer -->
   <footer>
     <div class="container">
@@ -189,7 +240,7 @@
         <div class="row"><a href="/TermsAndCondition.html" style="color:#F75246;">Terms and Conditions</a></div>
         <div class="row"><a href="/ApplyBoardTerms.html" style="color:#F75246;">Terms of Use</a></div>
         <div class="row"><a href="/CookiePolicy.html" style="color:#F75246;">Cookie Policy</a></div>
-        <div class="row"><a href="/applyboardfees.html" style="color:#F75246;">Applyboard Fees</a></div>
+        <div class="row"><a href="/applyboardfees.html" style="color:#F75246;">ApplyBoard Fees</a></div>
       </div>
       <div class="col-md-3">
         <div class="row"><b>Get Social</b></div>
@@ -211,3 +262,8 @@
   <!-- footer -->
 </body>
 </html>
+
+<script>
+  // Initialize Wow.js
+  new WOW().init();
+</script>
